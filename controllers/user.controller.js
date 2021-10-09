@@ -1,6 +1,9 @@
 const UserModel = require("../models/user.model");
 const ObjectID = require('mongoose').Types.ObjectId;
 
+
+// crud user
+
 module.exports.getAllUsers = async (req,res) => {
     const users = await UserModel.find().select('-pass');
     res.status(200).json( users );

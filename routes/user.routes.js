@@ -5,7 +5,7 @@ const userController = require('../controllers/user.controller');
 
 
 
-// authentification
+// authentification db
 // http://localhost:5000/api/user/register
 router.post("/register", authController.signUp);
 

@@ -2,6 +2,8 @@ const mongoose = require("mongoose");
 const { isEmail } = require("validator");
 const bcrypt = require("bcrypt");
 
+// user model for database management
+
 const userSchema = new mongoose.Schema(
     {
         pseudo: {
