@@ -6,8 +6,11 @@ const userController = require('../controllers/user.controller');
 
 
 // authentification db
-// http://localhost:5000/api/user/register
+// http://localhost:5000/api/user
+
 router.post("/register", authController.signUp);
+router.post('/login', authController.signIn);
+router.get('/logout', authController.logout);
 
 // user db
 router.get("/", userController.getAllUsers);
